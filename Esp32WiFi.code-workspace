@@ -1,0 +1,20 @@
+{
+    "folders": [
+        {
+            "path": "Device"
+        }
+    ],
+    "settings": {
+        "IoTWorkbench.BoardId": "esp32",
+        "IoTWorkbench.DevicePath": "Device",
+        "files.associations": {
+            "*.tcc": "cpp",
+            "fstream": "cpp",
+            "array": "cpp",
+            "deque": "cpp",
+            "unordered_map": "cpp",
+            "vector": "cpp",
+            "initializer_list": "cpp"
+        }
+    }
+}
