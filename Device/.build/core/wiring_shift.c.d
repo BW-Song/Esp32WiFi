@@ -1,4 +1,4 @@
-c:\Users\t-bosong\Documents\code\ESP32\WriteToEEPROM\Device\.build\core\wiring_shift.c.o: \
+c:\Users\t-bosong\Documents\GitHub\Esp32WiFi\Device\.build\core\wiring_shift.c.o: \
  C:\Users\t-bosong\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.2\cores\esp32\wiring_shift.c \
  C:\Users\t-bosong\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.2\cores\esp32\esp32-hal.h \
  C:\Users\t-bosong\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.2/tools/sdk/include/newlib/stdint.h \

@@ -6,6 +6,8 @@
                 "ARDUINO=10800"
             ],
             "includePath": [
+                "C:\\Users\\t-bosong\\AppData\\Local\\Arduino15\\packages\\AZ3166\\tools\\**",
+                "C:\\Users\\t-bosong\\AppData\\Local\\Arduino15\\packages\\AZ3166\\hardware\\stm32f4\\1.6.2\\**",
                 "C:\\Users\\t-bosong\\Documents\\Arduino\\libraries\\Esp32WifiManager\\src",
                 "${workspaceFolder}",
                 "C:\\Users\\t-bosong\\AppData\\Local\\Arduino15\\packages\\esp32\\tools\\**",

@@ -1,73 +1,55 @@
 #include <Arduino.h>
-#line 1 "c:\\Users\\t-bosong\\Documents\\code\\ESP32\\WriteToEEPROM\\Device\\device.ino"
-#line 1 "c:\\Users\\t-bosong\\Documents\\code\\ESP32\\WriteToEEPROM\\Device\\device.ino"
-// #include <Preferences.h>
-// #include "SD.h"
+#line 1 "c:\\Users\\t-bosong\\Documents\\GitHub\\Esp32WiFi\\Device\\device.ino"
+#line 1 "c:\\Users\\t-bosong\\Documents\\GitHub\\Esp32WiFi\\Device\\device.ino"
 #include <WiFi.h>
-// #include "FS.h"
-// #include <M5Stack.h>
-#include <DNSServer.h>
-#include <WebServer.h>
 #include <DNSServer.h>
 #include <WebServer.h>
 #include <WiFiManager.h>
+#include <Preferences.h>
 
-// Preferences prefs;
-#line 13 "c:\\Users\\t-bosong\\Documents\\code\\ESP32\\WriteToEEPROM\\Device\\device.ino"
-void configModeCallback(WiFiManager *myWiFiManager);
-#line 20 "c:\\Users\\t-bosong\\Documents\\code\\ESP32\\WriteToEEPROM\\Device\\device.ino"
+WiFiManager wifiManager;
+char* connectionString;
+Preferences preferences;
+WiFiManagerParameter conStr("ConnectionString","ConnectionString",connectionString,40);
+
+#line 12 "c:\\Users\\t-bosong\\Documents\\GitHub\\Esp32WiFi\\Device\\device.ino"
+void saveConfigCallback();
+#line 29 "c:\\Users\\t-bosong\\Documents\\GitHub\\Esp32WiFi\\Device\\device.ino"
 void setup();
-#line 59 "c:\\Users\\t-bosong\\Documents\\code\\ESP32\\WriteToEEPROM\\Device\\device.ino"
+#line 42 "c:\\Users\\t-bosong\\Documents\\GitHub\\Esp32WiFi\\Device\\device.ino"
 void loop();
-#line 13 "c:\\Users\\t-bosong\\Documents\\code\\ESP32\\WriteToEEPROM\\Device\\device.ino"
-void configModeCallback (WiFiManager *myWiFiManager) {
-  Serial.println("Entered config mode");
-  Serial.println(WiFi.softAPIP());
-  //if you used auto generated SSID, print it
-  Serial.println(myWiFiManager->getConfigPortalSSID());
+#line 12 "c:\\Users\\t-bosong\\Documents\\GitHub\\Esp32WiFi\\Device\\device.ino"
+void saveConfigCallback()
+{
+  // Serial.println(wifiManager.getSSID());
+  // Serial.println(wifiManager.getPassword());
+  // Serial.println(conStr.getValue());
+  preferences.putString("WiFi_SSID",wifiManager.getSSID());
+  preferences.putString("WiFi_Password",wifiManager.getPassword());
+  preferences.putString("ConStr",String(conStr.getValue()));
+
+  const char* s = preferences.getString("WiFi_SSID").c_str();
+  Serial.println(s);
+  const char* p = preferences.getString("WiFi_Password").c_str();
+  Serial.println(p);
+  const char* cs = preferences.getString("ConStr").c_str();
+  Serial.println(cs);
 }
 
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(115200);
-  // prefs.begin("Settings");
-  // String WiFiSSID = "HUAWEI P9 song";
-  // String WiFiPassword = "dongsong0802";
-  // String ConStr = "HostName=bwsong-test.azure-devices.net;DeviceId=ESP32;SharedAccessKey=EfVJ6UZsd30wOlC4KN+ywlI4YWQcjrNdh6VmzDA12Ms=";
-  // prefs.putString("WiFiSSID",WiFiSSID);
-  // prefs.putString("WiFiPassword",WiFiPassword);
-  // prefs.putString("ConStr",ConStr);
-
-  // String WiFiSSID, WiFiPassword, ConStr;
-  // WiFiPassword = prefs.getString("WiFiPassword");
-  // WiFiSSID = prefs.getString("WiFiSSID");
-  // ConStr = prefs.getString("ConStr");
-  // Serial.println("WiFiSSID:");
-  // Serial.println(WiFiSSID);
-  // Serial.println("WiFiPassword:");
-  // Serial.println(WiFiPassword);
-  // Serial.println("ConStr:");
-  // Serial.println(ConStr);
-
-  // WiFi.mode(WIFI_AP_STA);
-  // WiFi.beginSmartConfig();
-  // Serial.println("Waiting for SmartConfig.");
-  // while (!WiFi.smartConfigDone()) {
-  //   delay(500);
-  //   Serial.print(".");
-  // }
-  // Serial.println("");
-  // Serial.println("SmartConfig received.");
-
-  WiFiManager wifiManager;
-  // wifiManager.resetSettings();
-  wifiManager.setAPCallback(configModeCallback);
+  preferences.begin("Connections");
+  
+  wifiManager.resetSettings();
+  wifiManager.setDebugOutput(false);
+  wifiManager.addParameter(&conStr);
+  wifiManager.setSaveParamsCallback(saveConfigCallback);
   wifiManager.autoConnect("ESP32-WiFiConfig", "AzureSet");
-  Serial.println("Connected");
+  preferences.end();
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-
 }
 

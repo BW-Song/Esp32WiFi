@@ -1,4 +1,4 @@
-c:\Users\t-bosong\Documents\code\ESP32\WriteToEEPROM\Device\.build\core\base64.cpp.o: \
+c:\Users\t-bosong\Documents\GitHub\Esp32WiFi\Device\.build\core\base64.cpp.o: \
  C:\Users\t-bosong\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.2\cores\esp32\base64.cpp \
  C:\Users\t-bosong\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.2\cores\esp32\Arduino.h \
  C:\Users\t-bosong\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.2/tools/sdk/include/newlib/stdint.h \

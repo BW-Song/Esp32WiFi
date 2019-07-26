@@ -1,5 +1,5 @@
-c:\Users\t-bosong\Documents\code\ESP32\WriteToEEPROM\Device\.build\sketch\device.ino.cpp.o: \
- c:\Users\t-bosong\Documents\code\ESP32\WriteToEEPROM\Device\.build\sketch\device.ino.cpp \
+c:\Users\t-bosong\Documents\GitHub\Esp32WiFi\Device\.build\sketch\device.ino.cpp.o: \
+ c:\Users\t-bosong\Documents\GitHub\Esp32WiFi\Device\.build\sketch\device.ino.cpp \
  C:\Users\t-bosong\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.2\cores\esp32/Arduino.h \
  C:\Users\t-bosong\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.2/tools/sdk/include/newlib/stdint.h \
  C:\Users\t-bosong\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.2/tools/sdk/include/newlib/machine/_default_types.h \
@@ -186,4 +186,5 @@ c:\Users\t-bosong\Documents\code\ESP32\WriteToEEPROM\Device\.build\sketch\device
  C:\Users\t-bosong\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.2/tools/sdk/include/esp32/esp_wifi.h \
  C:\Users\t-bosong\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.2/tools/sdk/include/esp32/esp_wifi_crypto_types.h \
  C:\Users\t-bosong\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.2/tools/sdk/include/esp32/esp_wifi_os_adapter.h \
- C:\Users\t-bosong\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.2\libraries\WiFiManager/strings_en.h
+ C:\Users\t-bosong\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.2\libraries\WiFiManager/strings_en.h \
+ C:\Users\t-bosong\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.2\libraries\Preferences\src/Preferences.h

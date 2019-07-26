@@ -10,27 +10,32 @@
     "Includepath": "C:\\Users\\t-bosong\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.2\\variants\\m5stack_core_esp32"
   },
   {
-    "Sourcefile": "c:\\Users\\t-bosong\\Documents\\code\\ESP32\\WriteToEEPROM\\Device\\.build\\sketch\\device.ino.cpp",
+    "Sourcefile": "c:\\Users\\t-bosong\\Documents\\GitHub\\Esp32WiFi\\Device\\.build\\sketch\\device.ino.cpp",
     "Include": "WiFi.h",
     "Includepath": "C:\\Users\\t-bosong\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.2\\libraries\\WiFi\\src"
   },
   {
-    "Sourcefile": "c:\\Users\\t-bosong\\Documents\\code\\ESP32\\WriteToEEPROM\\Device\\.build\\sketch\\device.ino.cpp",
+    "Sourcefile": "c:\\Users\\t-bosong\\Documents\\GitHub\\Esp32WiFi\\Device\\.build\\sketch\\device.ino.cpp",
     "Include": "DNSServer.h",
     "Includepath": "C:\\Users\\t-bosong\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.2\\libraries\\DNSServer\\src"
   },
   {
-    "Sourcefile": "c:\\Users\\t-bosong\\Documents\\code\\ESP32\\WriteToEEPROM\\Device\\.build\\sketch\\device.ino.cpp",
+    "Sourcefile": "c:\\Users\\t-bosong\\Documents\\GitHub\\Esp32WiFi\\Device\\.build\\sketch\\device.ino.cpp",
     "Include": "WebServer.h",
     "Includepath": "C:\\Users\\t-bosong\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.2\\libraries\\WebServer\\src"
   },
   {
-    "Sourcefile": "c:\\Users\\t-bosong\\Documents\\code\\ESP32\\WriteToEEPROM\\Device\\.build\\sketch\\device.ino.cpp",
+    "Sourcefile": "c:\\Users\\t-bosong\\Documents\\GitHub\\Esp32WiFi\\Device\\.build\\sketch\\device.ino.cpp",
     "Include": "WiFiManager.h",
     "Includepath": "C:\\Users\\t-bosong\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.2\\libraries\\WiFiManager"
   },
   {
-    "Sourcefile": "c:\\Users\\t-bosong\\Documents\\code\\ESP32\\WriteToEEPROM\\Device\\.build\\sketch\\device.ino.cpp",
+    "Sourcefile": "c:\\Users\\t-bosong\\Documents\\GitHub\\Esp32WiFi\\Device\\.build\\sketch\\device.ino.cpp",
+    "Include": "Preferences.h",
+    "Includepath": "C:\\Users\\t-bosong\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.2\\libraries\\Preferences\\src"
+  },
+  {
+    "Sourcefile": "c:\\Users\\t-bosong\\Documents\\GitHub\\Esp32WiFi\\Device\\.build\\sketch\\device.ino.cpp",
     "Include": "",
     "Includepath": ""
   },
@@ -111,6 +116,11 @@
   },
   {
     "Sourcefile": "C:\\Users\\t-bosong\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.2\\libraries\\WiFiManager\\WiFiManager.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\t-bosong\\AppData\\Local\\Arduino15\\packages\\esp32\\hardware\\esp32\\1.0.2\\libraries\\Preferences\\src\\Preferences.cpp",
     "Include": "",
     "Includepath": ""
   },

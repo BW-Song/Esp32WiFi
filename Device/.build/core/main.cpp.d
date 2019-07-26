@@ -1,4 +1,4 @@
-c:\Users\t-bosong\Documents\code\ESP32\WriteToEEPROM\Device\.build\core\main.cpp.o: \
+c:\Users\t-bosong\Documents\GitHub\Esp32WiFi\Device\.build\core\main.cpp.o: \
  C:\Users\t-bosong\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.2\cores\esp32\main.cpp \
  C:\Users\t-bosong\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.2/tools/sdk/include/freertos/freertos/FreeRTOS.h \
  C:\Users\t-bosong\AppData\Local\Arduino15\packages\esp32\hardware\esp32\1.0.2/tools/sdk/include/newlib/sys/reent.h \
